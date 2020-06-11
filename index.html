@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          Brenda Mukindia
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="items-wrapper">
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background1.jpg)"></div>
+
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+              <h1>New Custom  Bulk sms</h1>
+            </div>
+
+            <div class="subtitle">Custom SMS feature in is for an organization  who want to send unique variable SMS to each receiver (from excel sheet). With the help of variable feature you can change variable value in each SMS and let remaining SMS same. 
+              .</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background2.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+
+            </div>
+
+            <div class="subtitle">New bulk sms</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background3.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+            </div>
+
+            <div class="subtitle">inbox</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background4.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+              
+            </div>
+
+            <div class="subtitle">outbox.</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background5.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+            
+            </div>
+
+            <div class="subtitle">custom  outbox.</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background6.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+             
+            </div>
+
+            <div class="subtitle">scheduled sms.</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background7.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+             
+            </div>
+
+            <div class="subtitle">flagged sms</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background8.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+            
+            </div>
+
+            <div class="subtitle">contacts.</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background9.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+              
+            </div>
+
+            <div class="subtitle">billing.</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background10.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+                         </div>
+
+            <div class="subtitle">deny list.</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background11.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+    
+            </div>
+
+            <div class="subtitle">low balance alert.</div>
+          </div>
+        </div>
+
+        <div class="item-wrapper">
+          <div class="img-background" style="background-image:url(images/background12.jpg)"></div>
+          <div class="info-text-wrapper">
+            <div class="title-wrapper">
+              
+            </div>
+
+            <div class="subtitle">attached files.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const bItems = document.querySelectorAll('.item-wrapper');
+
+  bItems.forEach(bItem => {
+    bItem.addEventListener('mouseover', () => {
+      console.log(bItem.childNodes[1].classList)
+      bItem.childNodes[1].classList.add('image-blur');
+    });
+
+    bItem.addEventListener('mouseout', () => {
+      console.log(bItem.childNodes[1].classList)
+      bItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+
+</script>
+
+</html>
